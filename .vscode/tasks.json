@@ -6,7 +6,17 @@
         {
             "label": "help",
             "type": "shell",
-            "command": "& \"$env:atmel\" /?",
+            "command": "& \"$env:atmel\" /?"
+        },
+        {
+            "label": "build",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "command": "& \"$env:atmel\" ${fileDirname}.atsln /build debug /out ${fileDirname}${pathSeparator}build.log",
+            "problemMatcher": []
         }
     ]
 }
