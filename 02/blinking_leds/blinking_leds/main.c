@@ -6,11 +6,22 @@
  */
 
 #include <avr/io.h>
+#include <avr/delay.h>
+
+#define F_CPU 1000000UL
 
 int main(void)
 {
-    /* Replace with your application code */
+    DDRA = 0b00000110;
+    DDRD = 0b00001100;
     while (1)
     {
+        PORTA = 0b00000110;
+        PORTD = 0b00001100;
+        _delay_ms(1000);
+        PORTA = 0b00000000;
+        PORTD = 0b00000000;
+        _delay_ms(1000);
     }
+    return 0;
 }
