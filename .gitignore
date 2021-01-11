@@ -1,3 +1,5 @@
 *.workspace
 *.log
 Debug/
+proteus/
+!proteus/*.pdsprj
