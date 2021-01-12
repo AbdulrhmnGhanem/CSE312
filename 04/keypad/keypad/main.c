@@ -1,10 +1,8 @@
 #include <avr/io.h>
-
+#include "lcd.h"
 
 int main(void)
 {
-    while (1) 
-    {
-    }
+    lcd_init();
+    lcd_string_write("lcd works!");
 }
-

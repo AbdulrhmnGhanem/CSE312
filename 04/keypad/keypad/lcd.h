@@ -1,10 +1,3 @@
-/*
- * lcd.h
- *
- * Created: 10/12/2019 7:15:13 PM
- *  Author: moram
- */
-
 #ifndef LCD_H_
 #define LCD_H_
 

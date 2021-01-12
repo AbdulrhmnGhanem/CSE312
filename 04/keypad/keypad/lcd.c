@@ -1,5 +1,5 @@
 #include <avr/io.h>
-#include "LCD16X2.h"
+#include "lcd.h"
 
 void lcd_data_write(char data)
 {
