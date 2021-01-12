@@ -57,3 +57,8 @@ void lcd_init()
     // Reset cursor
     lcd_command_write(0x80);
 }
+
+void lcd_clear()
+{
+    lcd_command_write(0x01);
+}

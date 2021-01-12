@@ -1,5 +1,5 @@
 #include <avr/io.h>
-#include "LCD16X2.h"
+#include "lcd.h"
 
 void lcd_data_write(char data)
 {
@@ -56,4 +56,9 @@ void lcd_init()
     lcd_command_write(0x01);
     // Reset cursor
     lcd_command_write(0x80);
+}
+
+void lcd_clear()
+{
+    lcd_command_write(0x01);
 }

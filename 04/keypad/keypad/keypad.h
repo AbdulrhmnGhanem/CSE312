@@ -9,6 +9,8 @@
 #define KEYPAD_PORT PORTD
 #define KEYPAD_DDR  DDRD
 #define KEYPAD_PIN  PIND
+#define KEYPAD_NULL_SENTINEL 'z'
+#define KEYPAD_BUTTON_PREFIX "SW"
 
 void keypad_init(void);
 uint8_t keypad_read(void);

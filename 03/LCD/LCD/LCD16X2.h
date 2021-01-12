@@ -21,6 +21,7 @@
 void lcd_data_write(char data);
 void lcd_string_write(char *string);
 void lcd_command_write(char command);
-void lcd_init();
+void lcd_init(void);
+void lcd_clear(void);
 
 #endif /* LCD16X2_H_ */
